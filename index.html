@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>productlist</title>
+  </head>
+  <body>
+    <section id="products">
+      <div id="products-heading">
+        <p>Product List</p>
+      </div>
+      <section id="products-list">
+
+      </section>
+
+      <button class="save-button">Save</button>
+      <bbutton class="delete-button">Mass Delete</bbutton>
+    </section>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product List</title>
+<style href="index.css/styles.css" rel="stylesheet"></style>
+</head>
+<body>
+  <h1>Product List</h1>
+  <button class="button" onclick="redirectToProductAdd()">ADD</button>
+  <button class="button" onclick="massDelete()">MASS DELETE</button>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>SKU</th>
+        <th>Name</th>
+        <th>Price ($)</th>
+        <th>Attribute</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="checkbox" class="delete-checkbox"></td>
+        <td>SKU123</td>
+        <td>Product 1</td>
+        <td>19.99</td>
+        <td>2.5 MB</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="delete-checkbox"></td>
+        <td>SKU456</td>
+        <td>Product 2</td>
+        <td>29.99</td>
+        <td>1.5 Kg</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="delete-checkbox"></td>
+        <td>SKU789</td>
+        <td>Product 3</td>
+        <td>49.99</td>
+        <td>60x40x20 cm</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+</html>

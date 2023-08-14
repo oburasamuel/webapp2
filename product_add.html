@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add product</title>
+  <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+  <form id="product_form">
+    <h2>Add Product</h2>
+    <hr>
+    <div>
+      <div>
+        <label>
+          SKU<input type="text" placeholder="my SKU" required>
+          Name<input type="text" placeholder="Name" required>
+          Price<input type="text" placeholder="Price" required>
+        </label>
+        
+      </div>
+    </div>
+  </form>
+</body>
+</html> -->
+
+Certainly, here's an example of a product add page that meets your requirements:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #notification {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Product</h1>
+    
+    <form id="product_form">
+        <div id="notification"></div>
+        
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" required><br>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        
+        <label for="price">Price ($):</label>
+        <input type="number" id="price" required><br>
+        
+        <label for="productType">Product Type:</label>
+        <select id="productType">
+            <option value="DVD">DVD</option>
+            <option value="Book">Book</option>
+            <option value="Furniture">Furniture</option>
+        </select><br>
+        
+        <div id="specialAttribute">
+            <!-- Will be populated dynamically based on the selected product type -->
+        </div>
+        
+        <button type="button" id="saveButton">Save</button>
+        <button type="button" id="cancelButton">Cancel</button>
+    </form>
+    
+    
+</body>
+</html>
+```
+
+Please note that the SKU uniqueness check and actual saving of the product data are placeholders in this example. You would need to implement those actions based on your backend or storage mechanism.
